@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1;
+    color: #263238;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #d4e1e9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #004d40;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 70%;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00251a;
+  }
+  
+  .searchHistory {
+    border-top: 2px solid #004d40;
+    padding-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Alteração para exibir os itens em linha (flex) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  .searchResult {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Garante que cada item ocupe toda a largura do contêiner pai */
+  }
+  
+  .medicationName {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .location, .quantity {
+    display: block;
+    color: #555;
+  }
+  
+  @media (max-width: 600px) {
+    input {
+      width: 100%;
+    }
+  }
+  

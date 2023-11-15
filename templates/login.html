@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    
+    <title>Entrar</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>MAPAS PHARMACY</h1>
+            <h2>Bem vindo(a)!<br> Acesse sua conta agora mesmo.</h2>
+            <img src="static/animation/animacao.svg" class="left-login-image" alt="Animação dos farmacêuticos">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <div class="logo">
+                    <img src="static/imagens/logo_01.jpeg" alt="logo">
+                </div>
+                <h1>Acessar conta</h1>
+                <h3>Preencha com seus dados.</h3>
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="login" placeholder="email">
+                </div>
+                <div class="textfield">
+                    <label for="login">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login">Entrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

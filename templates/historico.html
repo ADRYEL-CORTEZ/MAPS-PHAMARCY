@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/historico.css') }}">
+  <title>Histórico de Pesquisa</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Histórico de Pesquisa</h1>
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Digite sua pesquisa">
+      <button type="submit">Pesquisar</button>
+    </form>
+
+    <div class="searchHistory">
+      <h2>Últimas Pesquisas:</h2>
+      <ul id="historyList">
+        <li>
+          <div class="searchResult">
+            <span class="medicationName">Carbonato de litio</span>
+            <span class="location">CEM
+                Rua: Rio Madeira, 222, Agenor de Carvalho
+            </span>
+            <span class="quantity">Estoque: 650 unidades</span>
+          </div>
+          <div class="searchResult">
+            <span class="medicationName">Sertralina</span>
+            <span class="location">Owaldo Cruz
+                Avnida Jorge Teixeira, 2122, Embratel
+            </span>
+            <span class="quantity">Estoque: 200 unidades</span>
+          </div>
+          <div class="searchResult">
+            <span class="medicationName">Paracetamol</span>
+            <span class="location">CEM
+                Rua: Rio Madeira, 222, Agenor de Carvalho</span>
+            <span class="quantity">Estoque: 100 unidades</span>
+          </div>
+        </li>
+        <!-- Adicione mais itens conforme necessário -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
